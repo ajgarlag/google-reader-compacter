@@ -33,6 +33,11 @@ styleText += ' #entries.list .collapsed .entry-icons {top: 0}';
 styleText += ' #entries.list .collapsed .entry-main .entry-source-title {top: 0}';
 styleText += ' #entries.list .collapsed .entry-secondary {top: 0}';
 
+// Minimize the recommendations section
+if (document.getElementById('lhn-recommendations').className.indexOf('section-minimized') == -1) {
+    document.getElementById('lhn-recommendations').className += ' section-minimized';
+}
+
 // Write down the style
 var head = document.getElementsByTagName('head')[0];
 var style = document.createElement('style');
