@@ -17,7 +17,7 @@ var styleText='';
 styleText += ' #sections-header {height: 40px}';
 styleText += ' #logo-section {height: 28px}';
 styleText += ' #viewer-header {height: 40px}';
-styleText += ' #lhn-add-subscription-section {height: 40px}';
+styleText += ' #lhn-add-subscription-section {height: 40px; width: 245px}';
 styleText += ' #viewer-view-options, #mark-all-as-read-split-button, #viewer-top-controls .goog-button {margin-right: 0.2em}';
 styleText += ' #nav {width: 245px}';
 styleText += ' #chrome {margin-left: 245px}';
@@ -37,6 +37,7 @@ styleText += ' #entries.list .collapsed .entry-secondary {top: 0}';
 if (document.getElementById('lhn-recommendations').className.indexOf('section-minimized') == -1) {
     document.getElementById('lhn-recommendations').className += ' section-minimized';
 }
+
 
 // Write down the style
 var head = document.getElementsByTagName('head')[0];
