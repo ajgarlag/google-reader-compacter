@@ -2,7 +2,7 @@
 // @name        Google Reader Compacter
 // @namespace   http://aj.garcialagar.es/gmscripts
 // @description To compact the new Google Reader Interface
-// @version     1.1.0
+// @version     1.1.1
 // @include     http://www.google.*/reader/*
 // @include     https://www.google.*/reader/*
 // ==/UserScript==
