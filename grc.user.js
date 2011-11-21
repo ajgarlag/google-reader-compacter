@@ -19,6 +19,7 @@ styleText += ' #logo-section {height: 28px}';
 styleText += ' #viewer-header {height: 40px}';
 styleText += ' #lhn-add-subscription-section {height: 40px; width: 245px}';
 styleText += ' #viewer-view-options, #mark-all-as-read-split-button, #viewer-top-controls .goog-button {margin-right: 0.2em}';
+styleText += ' #viewer-refresh {min-width: 22px}';
 styleText += ' #nav {width: 245px}';
 styleText += ' .folder .folder .name-text {max-width: 106px}';
 styleText += ' .lhn-section-no-unread-counts .folder .name-text, #lhn-recommendations .name-text, .lhn-section-no-unread-counts .folder .folder .name-text, #lhn-recommendations .folder .folder .name-text {max-width: 113px}';
