@@ -31,7 +31,6 @@ styleText += ' #search {padding: 8px 0}';
 styleText += ' #scrollable-sections-top-shadow, #scrollable-sections-bottom-shadow {width: 245px}';
 styleText += ' #entries {padding-right: 0}';
 styleText += ' #entries.list .entry .collapsed {padding: 0}';
-styleText += ' #entries.list .collapsed .entry-icons {top: 0}';
 styleText += ' #entries.list .collapsed .entry-main .entry-source-title {top: 0}';
 styleText += ' #entries.list .collapsed .entry-secondary {top: 0}';
 
