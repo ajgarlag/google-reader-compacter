@@ -2,7 +2,7 @@
 // @name        Google Reader Compacter
 // @namespace   http://aj.garcialagar.es/gmscripts
 // @description To compact the new Google Reader Interface
-// @version     1.1.1
+// @version     1.2.0
 // @include     http://www.google.*/reader/*
 // @include     https://www.google.*/reader/*
 // ==/UserScript==
@@ -14,32 +14,29 @@
 
 var styleText='';
 
-styleText += ' #sections-header {height: 40px}';
-styleText += ' #logo-section {height: 28px}';
-styleText += ' #viewer-header {height: 40px}';
-styleText += ' #lhn-add-subscription-section {height: 40px; width: 245px}';
-styleText += ' #viewer-view-options, #mark-all-as-read-split-button, #viewer-top-controls .goog-button {margin-right: 0.2em}';
-styleText += ' #viewer-refresh {min-width: 22px}';
-styleText += ' #nav {width: 245px}';
-styleText += ' .folder .folder .name-text {max-width: 106px}';
-styleText += ' .lhn-section-no-unread-counts .folder .name-text, #lhn-recommendations .name-text, .lhn-section-no-unread-counts .folder .folder .name-text, #lhn-recommendations .folder .folder .name-text {max-width: 113px}';
-styleText += ' #chrome {margin-left: 245px}';
+/** Autohide top-bar **/
 styleText += ' #top-bar {height: 5px}';
 styleText += ' #logo, .loaded #search {display: none}';
 styleText += ' #top-bar:hover {height: 45px}';
 styleText += ' #top-bar:hover #logo, .loaded #top-bar:hover #search {display: block}';
 styleText += ' #search {padding: 8px 0}';
-styleText += ' #scrollable-sections-top-shadow, #scrollable-sections-bottom-shadow {width: 245px}';
-styleText += ' #entries {padding-right: 0}';
-styleText += ' #entries.list .entry .collapsed {padding: 0}';
-styleText += ' #entries.list .collapsed .entry-main .entry-source-title {top: 0}';
-styleText += ' #entries.list .collapsed .entry-secondary {top: 0}';
+
+/** Viewer header **/
+styleText += ' .jfk-button {margin-right: 0}';
+styleText += ' #viewer-refresh {min-width: 21px; margin-right: 3px}';
+styleText += ' #settings-button {min-width: 21px}';
+styleText += ' #entries-down {margin-right: 3px}';
+styleText += ' #entries-down {margin-right: 3px}';
 
 // Minimize the recommendations section
 if (document.getElementById('lhn-recommendations').className.indexOf('section-minimized') == -1) {
     document.getElementById('lhn-recommendations').className += ' section-minimized';
 }
 
+// Select compact density
+if (document.getElementById(':3').className.indexOf('goog-option-selected') == -1) {
+    alert('Please, select compact view density to improve compactation.')
+}
 
 // Write down the style
 var head = document.getElementsByTagName('head')[0];
